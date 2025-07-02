@@ -11,10 +11,10 @@ function convertToRoman(num) {
 
   //your code here
 let roman = '';
-	for(let i = 0; i < romanNumerals.length; i++){
-		while(num >= romanNumerals[i][1]){
-			roman += romanNumerals[i][0];
-			num -= romanNumerals[i][1];
+	for(let [roman, value] of romansymblos){
+		while(num >= value){
+			roman += roman;
+			num -= value;
 		}
 	}
 	return roman;
