@@ -11,9 +11,10 @@ function convertToRoman(num) {
 
   //your code here
 let result = '';
-	for(let [roman, value] of romansymblos){
+	for(let i  0; i < romanNumerals.length; i++){
+		const [symbol,value] = romanNumerals[i];
 		while(num >= value){
-			roman += roman;
+			result += symbols;
 			num -= value;
 		}
 	}
