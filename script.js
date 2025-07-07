@@ -1,5 +1,5 @@
 function convertToRoman(num) {
-  	const romanNumerals = {
+  	const romanNumerals = [
      ['M',1000], 
      ['D', 500], 
      ['C', 100], 
@@ -7,7 +7,7 @@ function convertToRoman(num) {
      ['X', 10], 
      ['V', 5], 
      ['I', 1]
-    };
+    ];
 
   //your code here
 let result = '';
