@@ -14,7 +14,7 @@ let result = '';
 	for(let i  0; i < romanNumerals.length; i++){
 		const [symbol,value] = romanNumerals[i];
 		while(num >= value){
-			result += symbols;
+			result += symbol;
 			num -= value;
 		}
 	}
