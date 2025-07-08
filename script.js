@@ -29,7 +29,7 @@ app.post('/romanConverter', (req, res) => {
 	const romanNumeral = convertToRoman(input);
 	res.json({ roamn: romanNumeral });
 });
-app.losten(port, () => {
+app.listen(port, () => {
 	console.log('server running at http://localhost:${port}')
 });
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
