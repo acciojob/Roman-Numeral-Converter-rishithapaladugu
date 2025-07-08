@@ -1,6 +1,6 @@
 function convertToRoman(num) {
 	if(num <= 0){
-		return "";
+		return '';
 	}
   	const obj = {
      0:['M',1000], 
@@ -13,10 +13,10 @@ function convertToRoman(num) {
 	};
 
   //your code here
-let roman = "";
-	for(let i = 0; i < obj.length; i++){
-		const [symbol,value] = obj[i
-			];
+let roman = '';
+	for(const [key, [symbol, value]] of obj.entries(obj)){
+		
+			
 		while(num >= value){
 			roman += symbol;
 			num -= value;
