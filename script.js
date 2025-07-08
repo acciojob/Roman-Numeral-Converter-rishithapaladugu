@@ -1,5 +1,5 @@
 function convertToRoman(num) {
-	if(num <= 0 || num >= 4000){
+	if(num <= 0 || num >= 100000){
 		return '';
 	}
   	const obj = {
