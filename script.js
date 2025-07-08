@@ -14,7 +14,7 @@ function convertToRoman(num) {
 
   //your code here
 let roman = '';
-	for(const [key, [symbol, value]] of obj.entries(obj)){
+	for(const [symbol, value] of obj){
 		
 			
 		while(num >= value){
