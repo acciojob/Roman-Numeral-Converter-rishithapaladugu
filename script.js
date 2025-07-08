@@ -24,14 +24,7 @@ let roman = "";
 	}
 	return roman;
 }
-app.post('/romanConverter', (req, res) => {
-	const { input } = req.body;
-	const romanNumeral = convertToRoman(input);
-	res.json({ roamn: romanNumeral });
-});
-app.listen(port, () => {
-	console.log('server running at http://localhost:${port}')
-});
+
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
 // console.log(convertToRoman(100000));
